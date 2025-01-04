@@ -1,9 +1,14 @@
 import Image from "next/image";
 import ContentItem from "../components/ContentItem";
+import MagicPillNav from "../components/MagicPillNav";
+
 export default function Home() {
     return (
         <div className="">
             <main>
+                <main className="min-h-screen flex items-center justify-center">
+                    <MagicPillNav/>
+                </main>
                 <div className="grid grid-cols-12 gap-x-5 py-8 mx-5">
                     <div className="col-start-1 col-span-5">
                         <h3 className="font-neuehaasunica text-xl">
