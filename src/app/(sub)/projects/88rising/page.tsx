@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ContentItem from "../../../components/ContentItem";
 
 export default function Home() {
     return (
