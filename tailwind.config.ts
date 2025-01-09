@@ -19,6 +19,8 @@ export default {
       },
       fontSize: {
         h4mono: '0.875rem',
+        h1: '2.25rem',
+        quote: '1.5',
       },
 
     },
