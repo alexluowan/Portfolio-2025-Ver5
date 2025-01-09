@@ -3,7 +3,6 @@ import ContentItem from "../../../components/ContentItem";
 
 export default function Home() {
     return (
-        <div className="">
             <main>
                 <section className="grid grid-cols-12 gap-x-5 py-8 mx-5">
                     <div className="col-start-3 col-span-8">
@@ -615,7 +614,6 @@ export default function Home() {
                 </section>
 
             </main>
-        </div>
-    )
-        ;
+
+    );
 }

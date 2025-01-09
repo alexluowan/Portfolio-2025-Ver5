@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContentItem from "../components/ContentItem";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -20,9 +21,9 @@ export default function Home() {
                     </div>
                     <ul className="flex flex-row col-span-4 row-start-1 col-start-9 font-neuehaasunica text-h4mono bg-background border border-black rounded-full py-2.5">
                         <li>
-                            <a href="/" className="ml-12 py-1 flex justify-center">
+                            <Link href="/" className="ml-12 py-1 flex justify-center">
                                 WORK
-                            </a>
+                            </Link>
                         </li>
                         {/*<li>*/}
                         {/*    <a href="/about" className="px-10 py-1 flex items-center justify-center">*/}
@@ -47,7 +48,7 @@ export default function Home() {
                 <div className="grid grid-cols-12 gap-x-5 mt-60 mx-5">
                     {/* First Content Block with Video */}
                     <div className="col-start-1 col-span-4">
-                        <a href="/projects/88rising">
+                        <Link href="/projects/88rising">
                             <ContentItem
                                 videoSrc="/video/88rising/88risingsizzlereelmp4.mp4"
                                 title="88rising"
@@ -55,7 +56,7 @@ export default function Home() {
                                 subtitleRight="2023"
                                 borderColor="border-black"
                             />
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Second Content Block */}
