@@ -26,7 +26,7 @@ export default function Home() {
                         This project is not associated with 88rising. It was created as a mock client for an
                         academic assignment.
                     </p>
-                    <div className="flex flex-row mt-10 gap-x-16 invisible lg:visible">
+                    <div className="flex flex-row mt-10 gap-x-16 invisible md:visible lg:visible">
                         <div className="flex flex-col  w-3/5">
                             <div>
                                 <h4 className="font-favoritmono text-h4monomobile lg:text-h4mono">YEAR & DURATION</h4>
@@ -63,7 +63,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="-mt-52 col-start-1 col-span-2 visible lg:invisible">
+                <div className="-mt-52 col-start-1 col-span-2 visible md:invisible lg:invisible">
                     <div>
                         <h4 className="font-favoritmono text-h4monomobile lg:text-h4mono">YEAR & DURATION</h4>
                         <p className="font-neuehaasunica text-h4mono lg:text-xl">
@@ -77,7 +77,7 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
-                <div className="-mt-52 col-start-3 col-span-2 visible lg:invisible">
+                <div className="-mt-52 col-start-3 col-span-2 visible md:invisible lg:invisible">
                     <div>
                         <h4 className="font-favoritmono text-h4monomobile lg:text-h4mono">MY ROLE</h4>
                         <p className="font-neuehaasunica text-h4mono lg:text-xl">
