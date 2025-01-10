@@ -10,10 +10,10 @@ export default function Navbar() {
         setHoverIndex(index);
 
         // Play hover sound
-        const hoverSound = new Audio("/sounds/hover.mp3");
-        hoverSound.play().catch((error) => {
-            console.warn("Hover sound playback failed:", error);
-        });
+        // const hoverSound = new Audio("/sounds/hover.mp3");
+        // hoverSound.play().catch((error) => {
+        //     console.warn("Hover sound playback failed:", error);
+        // });
     };
 
     return (
