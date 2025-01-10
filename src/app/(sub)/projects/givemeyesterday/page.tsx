@@ -1,8 +1,13 @@
 import Image from "next/image";
+import Navbar from "@/src/app/components/Navbar";
 
 export default function Home() {
     return (
         <main>
+            <div className="grid grid-cols-12 gap-x-5 py-8 mx-5">
+                <Navbar
+                />
+            </div>
             <section className="grid grid-cols-12 gap-x-5 py-8 mx-5">
                 <div className="col-start-3 col-span-8">
                     <h1 className="font-offbit text-h1 uppercase leading-10">
@@ -415,7 +420,8 @@ export default function Home() {
                 </div>
                 <div className="col-start-7 col-span-4">
                     <p className="text-xl font-neuehaasunica">
-                        If I could go back, I would have definitely explored more ways to enhance the artists&#39; page, not
+                        If I could go back, I would have definitely explored more ways to enhance the artists&#39; page,
+                        not
                         just through additional interactions, but by incorporating thoughtful content that could elevate
                         the experience of the pre-exhibition site. The team faced tight deadlines, which limited our
                         ability to experiment as much as we would have liked.
