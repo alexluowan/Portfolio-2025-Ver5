@@ -1,5 +1,6 @@
 import ContentItem from "../components/ContentItem";
 import Link from "next/link";
+import Navbar from '../components/Navbar';
 
 export default function Home() {
     return (
@@ -17,31 +18,27 @@ export default function Home() {
                         Fraser University, currently seeking product design internships or freelance opportunities.
                     </h3>
                 </div>
-                <ul className="flex flex-row col-span-4 row-start-1 col-start-9 font-neuehaasunica text-h4mono bg-background border border-black rounded-full py-2.5">
-                    <li>
-                        <Link href="/" className="ml-12 py-1 flex justify-center">
-                            WORK
-                        </Link>
-                    </li>
-                    {/*<li>*/}
-                    {/*    <a href="/about" className="px-10 py-1 flex items-center justify-center">*/}
-                    {/*        ABOUT*/}
-                    {/*    </a>*/}
-                    {/*</li>*/}
-                    {/*<li>*/}
-                    {/*    <a*/}
-                    {/*        href="https://drive.google.com/file/d/10WjERFkheVFYvBMlpCuytdHzabqjjv--/view?usp=sharing"*/}
-                    {/*        className="pl-3 py-1 flex items-center justify-center"*/}
-                    {/*        target="_blank"*/}
-                    {/*        rel="noopener noreferrer"*/}
-                    {/*    >*/}
-                    {/*        RESUME*/}
-                    {/*    </a>*/}
-                    {/*</li>*/}
-                </ul>
-
+                {/*<nav className="col-start-9 col-span-4 row-start-1">*/}
+                {/*    <ul className="flex flex-row justify-between font-neuehaasunica text-h4mono bg-background border border-black rounded-full py-2.5">*/}
+                {/*        <li className="flex-grow text-center">*/}
+                {/*            <Link href="/" className="px-4 py-1">*/}
+                {/*                WORK*/}
+                {/*            </Link>*/}
+                {/*        </li>*/}
+                {/*        <li className="flex-grow text-center">*/}
+                {/*            <Link href="/about" className="px-4 py-1">*/}
+                {/*                ABOUT*/}
+                {/*            </Link>*/}
+                {/*        </li>*/}
+                {/*        <li className="flex-grow text-center">*/}
+                {/*            <Link href="/resume" className="px-4 py-1">*/}
+                {/*                RESUME*/}
+                {/*            </Link>*/}
+                {/*        </li>*/}
+                {/*    </ul>*/}
+                {/*</nav>*/}
+                <Navbar/>
             </div>
-
 
             <div className="grid grid-cols-12 gap-x-5 mt-60 mx-5">
                 {/* First Content Block with Video */}
@@ -80,7 +77,7 @@ export default function Home() {
                             subtitleRight="2024"
                             borderColor="border-black"
                         />
-                    </Link>                </div>
+                    </Link></div>
             </div>
 
 
