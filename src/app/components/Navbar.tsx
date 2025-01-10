@@ -1,5 +1,6 @@
-'use client';
-import Link from "next/link"; // Import Link from Next.js
+"use client";
+
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -7,6 +8,12 @@ export default function Navbar() {
 
     const handleHover = (index: number | null): void => {
         setHoverIndex(index);
+
+        // Play hover sound
+        const hoverSound = new Audio("/sounds/hover.mp3");
+        hoverSound.play().catch((error) => {
+            console.warn("Hover sound playback failed:", error);
+        });
     };
 
     return (
@@ -28,23 +35,8 @@ export default function Navbar() {
                         key={item}
                         className="relative z-10 flex-grow text-center"
                         onMouseEnter={() => handleHover(index)}
-                        onMouseLeave={() => handleHover(null)}
+                        onMouseLeave={() => setHoverIndex(null)}
                     >
-
-                        {/*<Link*/}
-                        {/*    href={*/}
-                        {/*        item === "WORK"*/}
-                        {/*            ? "/" // Root path for "WORK"*/}
-                        {/*            : `/projects/${item.toLowerCase()}` // Nested path for other items*/}
-                        {/*    }*/}
-                        {/*    className={`block py-1 w-full text-center transition-colors duration-300 ease-in-out ${*/}
-                        {/*        hoverIndex === index || (hoverIndex === null && index === 0)*/}
-                        {/*            ? "text-white"*/}
-                        {/*            : "text-black"*/}
-                        {/*    }`}*/}
-                        {/*>*/}
-                        {/*    {item}*/}
-                        {/*</Link>*/}
                         {item === "RESUME" ? (
                             // External link for RESUME
                             <a
@@ -52,14 +44,12 @@ export default function Navbar() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`block py-1 w-full text-center transition-colors duration-300 ease-in-out ${
-                                    hoverIndex === index
-                                        ? "text-white"
-                                        : "text-black"
+                                    hoverIndex === index ? "text-white" : "text-black"
                                 }`}
                             >
                                 {item}
                             </a>
-                            ) : (
+                        ) : (
                             <Link
                                 href={
                                     item === "WORK"
@@ -75,7 +65,6 @@ export default function Navbar() {
                                 {item}
                             </Link>
                         )}
-
                     </li>
                 ))}
             </ul>
