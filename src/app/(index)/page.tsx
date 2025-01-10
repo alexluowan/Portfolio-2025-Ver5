@@ -49,7 +49,7 @@ export default function Home() {
                     <Link href="/projects/88rising">
                         <ContentItem
                             videoSrc="/video/88rising/88risingsizzlereelmp4.mp4"
-                            title="88rising"
+                            title="88RISING"
                             subtitleLeft="PRODUCT DESIGN + BRAND"
                             subtitleRight="2023"
                             borderColor="border-black"
@@ -59,13 +59,28 @@ export default function Home() {
 
                 {/* Second Content Block */}
                 <div className="col-start-5 col-span-4">
-                    <ContentItem backgroundColor="bg-red-400"/>
+                    <Link href="/projects/givemeyesterday">
+                        <ContentItem
+                            imageSrc="/img/givemeyesterday/thumbnail.png"
+                            title="GIVE ME YESTERDAY"
+                            subtitleLeft="INTERACTION DESIGN + BRAND + ART DIRECTION"
+                            subtitleRight="2022"
+                            borderColor="border-black"
+                        />
+                    </Link>
                 </div>
 
                 {/* Third Content Block */}
                 <div className="col-start-9 col-span-4">
-                    <ContentItem backgroundColor="bg-red-400"/>
-                </div>
+                    <Link target="_blank" href="https://www.blaze.ai/">
+                        <ContentItem
+                            videoSrc="/video/blazeai/blazeaicontentdesigner.mp4"
+                            title="BLAZEAI"
+                            subtitleLeft="VISUAL DESIGN"
+                            subtitleRight="2024"
+                            borderColor="border-black"
+                        />
+                    </Link>                </div>
             </div>
 
 

@@ -388,8 +388,8 @@ export default function Home() {
                             muted
                             loop
                         >
-                            <source src="/video/88rising/homepage.webm" type="video/webm"/>
-                            <source src="/video/88rising/homepage.mov" type="video/mp4"/>
+                            <source src="/video/88rising/88risingyoutubefeed.webm" type="video/webm"/>
+                            <source src="/video/88rising/88risingyoutubefeed.mov" type="video/mp4"/>
 
                             Your browser does not support the video tag.
                         </video>
@@ -404,8 +404,8 @@ export default function Home() {
                             muted
                             loop
                         >
-                            <source src="/video/88rising/collaborations.webm" type="video/webm"/>
-                            <source src="/video/88rising/collaborations.mov" type="video/mp4"/>
+                            <source src="/video/88rising/88risingcurrentsite.webm" type="video/webm"/>
+                            <source src="/video/88rising/88risingcurrentsite.mov" type="video/mp4"/>
 
                             Your browser does not support the video tag.
                         </video>
