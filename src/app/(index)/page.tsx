@@ -18,25 +18,6 @@ export default function Home() {
                         Fraser University, currently seeking product design internships or freelance opportunities.
                     </h3>
                 </div>
-                {/*<nav className="col-start-9 col-span-4 row-start-1">*/}
-                {/*    <ul className="flex flex-row justify-between font-neuehaasunica text-h4mono bg-background border border-black rounded-full py-2.5">*/}
-                {/*        <li className="flex-grow text-center">*/}
-                {/*            <Link href="/" className="px-4 py-1">*/}
-                {/*                WORK*/}
-                {/*            </Link>*/}
-                {/*        </li>*/}
-                {/*        <li className="flex-grow text-center">*/}
-                {/*            <Link href="/about" className="px-4 py-1">*/}
-                {/*                ABOUT*/}
-                {/*            </Link>*/}
-                {/*        </li>*/}
-                {/*        <li className="flex-grow text-center">*/}
-                {/*            <Link href="/resume" className="px-4 py-1">*/}
-                {/*                RESUME*/}
-                {/*            </Link>*/}
-                {/*        </li>*/}
-                {/*    </ul>*/}
-                {/*</nav>*/}
                 <Navbar/>
             </div>
 

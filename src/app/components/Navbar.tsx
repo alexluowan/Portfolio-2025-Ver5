@@ -1,16 +1,19 @@
-'use client'
+'use client';
+import Link from "next/link"; // Import Link from Next.js
 import { useState } from "react";
 
 export default function Navbar() {
-    const [hoverIndex, setHoverIndex] = useState<number | null>(null); // Allow hoverIndex to be null for default state
+    const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
     const handleHover = (index: number | null): void => {
         setHoverIndex(index);
     };
 
     return (
-        <nav className="col-start-9 col-span-4 row-start-1">
-            <ul className="relative flex flex-row justify-center font-neuehaasunica text-h4mono bg-background border border-black rounded-full py-2.5">
+        <nav
+            className="fixed top-4 left-4 right-4 sm:left-[calc((100vw/12)*8)] sm:w-[calc((100vw/12)*4)] z-50 rounded-t-full"
+        >
+            <ul className="relative flex flex-row sm:flex-row justify-around sm:justify-center font-neuehaasunica text-h4mono border border-black rounded-full py-2.5 bg-background md:right-10 lg:right-10">
                 {/* Pill Shape */}
                 <div
                     className="absolute top-0 bottom-0 bg-black rounded-full transition-all duration-300 ease-in-out"
@@ -27,18 +30,19 @@ export default function Navbar() {
                         onMouseEnter={() => handleHover(index)}
                         onMouseLeave={() => handleHover(null)}
                     >
-                        <a
-                            href={`/${item.toLowerCase()}`}
+                        <Link
+                            href={item === "WORK" ? "/" : `/${item.toLowerCase()}`}
                             className={`block py-1 w-full text-center transition-colors duration-300 ease-in-out ${
-                                hoverIndex === index || (hoverIndex === null && index === 0) ? "text-white" : "text-black"
+                                hoverIndex === index || (hoverIndex === null && index === 0)
+                                    ? "text-white"
+                                    : "text-black"
                             }`}
                         >
                             {item}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>
         </nav>
-
     );
 }
