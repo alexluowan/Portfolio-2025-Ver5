@@ -30,16 +30,52 @@ export default function Navbar() {
                         onMouseEnter={() => handleHover(index)}
                         onMouseLeave={() => handleHover(null)}
                     >
-                        <Link
-                            href={item === "WORK" ? "/" : `/${item.toLowerCase()}`}
-                            className={`block py-1 w-full text-center transition-colors duration-300 ease-in-out ${
-                                hoverIndex === index || (hoverIndex === null && index === 0)
-                                    ? "text-white"
-                                    : "text-black"
-                            }`}
-                        >
-                            {item}
-                        </Link>
+
+                        {/*<Link*/}
+                        {/*    href={*/}
+                        {/*        item === "WORK"*/}
+                        {/*            ? "/" // Root path for "WORK"*/}
+                        {/*            : `/projects/${item.toLowerCase()}` // Nested path for other items*/}
+                        {/*    }*/}
+                        {/*    className={`block py-1 w-full text-center transition-colors duration-300 ease-in-out ${*/}
+                        {/*        hoverIndex === index || (hoverIndex === null && index === 0)*/}
+                        {/*            ? "text-white"*/}
+                        {/*            : "text-black"*/}
+                        {/*    }`}*/}
+                        {/*>*/}
+                        {/*    {item}*/}
+                        {/*</Link>*/}
+                        {item === "RESUME" ? (
+                            // External link for RESUME
+                            <a
+                                href="https://www.google.ca/" // Replace with your actual resume link
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`block py-1 w-full text-center transition-colors duration-300 ease-in-out ${
+                                    hoverIndex === index
+                                        ? "text-white"
+                                        : "text-black"
+                                }`}
+                            >
+                                {item}
+                            </a>
+                            ) : (
+                            <Link
+                                href={
+                                    item === "WORK"
+                                        ? "/" // Root path for "WORK"
+                                        : `/projects/${item.toLowerCase()}` // Nested path for other items
+                                }
+                                className={`block py-1 w-full text-center transition-colors duration-300 ease-in-out ${
+                                    hoverIndex === index || (hoverIndex === null && index === 0)
+                                        ? "text-white"
+                                        : "text-black"
+                                }`}
+                            >
+                                {item}
+                            </Link>
+                        )}
+
                     </li>
                 ))}
             </ul>
