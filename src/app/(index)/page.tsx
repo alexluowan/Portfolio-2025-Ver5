@@ -21,7 +21,7 @@ export default function Home() {
                 <Navbar/>
             </section>
 
-            <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-5 mt-60 mx-5">
+            <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-5 mt-20 mx-5 sticky">
                 {/* First Content Block with Video */}
                 <div className="col-start-1 col-span-4">
                     <Link href="/projects/88rising">
@@ -41,7 +41,7 @@ export default function Home() {
                         <ContentItem
                             imageSrc="/img/givemeyesterday/thumbnail.png"
                             title="GIVE ME YESTERDAY"
-                            subtitleLeft="INTERACTION DESIGN + BRAND + ART DIRECTION"
+                            subtitleLeft="INTERACTION DESIGN + BRAND"
                             subtitleRight="2022"
                             borderColor="border-black"
                         />
@@ -58,7 +58,8 @@ export default function Home() {
                             subtitleRight="2024"
                             borderColor="border-black"
                         />
-                    </Link></div>
+                    </Link>
+                </div>
             </div>
 
 

@@ -10,7 +10,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav
+        (<nav
             className="fixed top-4 left-4 right-4 sm:left-[calc((100vw/12)*8)] sm:w-[calc((100vw/12)*4)] z-50 rounded-t-full"
         >
             <ul className="relative flex flex-row sm:flex-row justify-around sm:justify-center font-neuehaasunica text-h4mono border border-black rounded-full py-2.5 bg-background md:right-10 lg:right-10">
@@ -47,7 +47,7 @@ export default function Navbar() {
                         {/*</Link>*/}
                         {item === "RESUME" ? (
                             // External link for RESUME
-                            <a
+                            (<a
                                 href="https://www.google.ca/" // Replace with your actual resume link
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -58,7 +58,7 @@ export default function Navbar() {
                                 }`}
                             >
                                 {item}
-                            </a>
+                            </a>)
                             ) : (
                             <Link
                                 href={
@@ -79,6 +79,6 @@ export default function Navbar() {
                     </li>
                 ))}
             </ul>
-        </nav>
+        </nav>)
     );
 }
