@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Navbar from "@/src/app/components/Navbar";
-
+import ResponsiveImage from "@/src/app/components/ResponsiveImage";
 export default function Home() {
     return (
         <main>
-
+            <ResponsiveImage
+                desktopSrc="/img/88rising/88risingthumbnail.png"
+                mobileSrc="/img/88rising/88risingthumbnailmobile.png"
+                alt="An Image Showcasing a Laptop with a Website"
+            />
             <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-5 py-8 mx-5">
                 <Navbar
                 />
@@ -15,14 +19,14 @@ export default function Home() {
                         Reimagining 88risings website experience for fans to engage with their favourite artists and
                         stay informed.
                     </h1>
-                    <p className="font-neuehaasunica  lg:text-xl mt-8">
+                    <p className="font-neuehaasunica mt-8">
                         As part of my studies, my classmates and I were tasked with identifying a client facing a
                         business problem, describing that problem, and crafting a solution. This 7-week experience
                         design project required us to develop a tailored intervention to address the client’s needs.
                         I was responsible for conducting user research, finalizing the interaction designs, and
                         facilitating a design sprint.
                     </p>
-                    <p className="mt-5  lg:text-xl">
+                    <p className="mt-5">
                         This project is not associated with 88rising. It was created as a mock client for an
                         academic assignment.
                     </p>
@@ -30,14 +34,14 @@ export default function Home() {
                         <div className="flex flex-col w-full md:w-3/5">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">YEAR & DURATION</h4>
-                                <p className="font-neuehaasunica  md:text-xl lg:text-xl">2023 - 7 Weeks</p>
+                                <p className="font-neuehaasunica">2023 - 7 Weeks</p>
                             </div>
                         </div>
 
                         <div className="flex flex-col w-full md:w-4/5">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">MY ROLE</h4>
-                                <p className="font-neuehaasunica  md:text-xl lg:text-xl">
+                                <p className="font-neuehaasunica">
                                     Lead Interaction Designer, Prototyping, Visual Designer, Facilitator, Mobile
                                     Designer
                                 </p>
@@ -47,7 +51,7 @@ export default function Home() {
                         <div className="flex flex-col w-full md:w-4/5">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">TEAM MEMBERS</h4>
-                                <p className="font-neuehaasunica  md:text-xl lg:text-xl">
+                                <p className="font-neuehaasunica">
                                     Claret Egwim-Nwagbara, Justin Yu, Luke Do, Terrence Xu
                                 </p>
                             </div>
@@ -56,7 +60,7 @@ export default function Home() {
                         <div className="flex flex-col w-full md:w-3/5">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">TOOLS</h4>
-                                <p className="font-neuehaasunica  md:text-xl lg:text-xl">
+                                <p className="font-neuehaasunica">
                                     Figma, After Effects, Premiere Pro, Google Surveys
                                 </p>
                             </div>
@@ -84,7 +88,7 @@ export default function Home() {
                             </h3>
                         </div>
                         <div>
-                            <h4 className="font-favoritmono text-h4monomobile lg:text-xl uppercase" dir="ltr">
+                            <h4 className="font-favoritmono text-h4monomobile uppercase lg:text-xl" dir="ltr">
                                 CEO & Founder of 88rising - Sean Miyashiro
                             </h4>
                         </div>
@@ -112,7 +116,7 @@ export default function Home() {
                             <h4 className="font-favoritmono text-h4mono mt-10">
                                 CONTEXT
                             </h4>
-                            <p className="lg:text-xl mt-5 font-neuehaasunica">
+                            <p className=" mt-5 font-neuehaasunica">
                                 88rising redefined how Asians fit in mainstream media, challenging existing
                                 stereotypes by
                                 showcasing that Asians can have an equal voice in the music industry. Having
@@ -125,7 +129,7 @@ export default function Home() {
                             <h4 className="font-favoritmono text-h4mono mt-10">
                                 BUSINESS PROBLEM
                             </h4>
-                            <p className="lg:text-xl mt-5 font-neuehaasunica">
+                            <p className=" mt-5 font-neuehaasunica">
                                 However, 88rising has since faced issues with discoverability. Within the past 4
                                 years,
                                 they’ve only accumulated 0.43 billion views on YouTube and have struggled with
@@ -175,7 +179,7 @@ export default function Home() {
                             <h4 className="font-favoritmono text-h4mono">
                                 COLLABORATIVE PROMOTION
                             </h4>
-                            <p className="lg:text-xl mt-5 font-neuehaasunica">
+                            <p className=" mt-5 font-neuehaasunica">
                                 Promoting discovery and increasing exposure for the lesser-known artists of 88rising
                                 by
                                 surfacing collaborative content with established talents.
@@ -185,7 +189,7 @@ export default function Home() {
                             <h4 className="font-favoritmono text-h4mono mt-10">
                                 PERSONIFYING ARTISTS
                             </h4>
-                            <p className="lg:text-xl mt-5 font-neuehaasunica">
+                            <p className=" mt-5 font-neuehaasunica">
                                 Showcasing the personalities of artists, to create a memorable first impression
                                 through unconventional means: using stickers and short clips that personify the
                                 artists and highlight them in a more relatable light.
@@ -204,7 +208,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4">
-                    <p className="lg:text-xl mt-5 lg:mt-0 font-neuehaasunica">
+                    <p className=" mt-5 lg:mt-0 font-neuehaasunica">
                         Over the past three weeks, I contributed to the development and rebranding of a website
                         experience for 88rising. My role involved enhancing the visual fidelity of initial
                         wireframes, creating high-fidelity prototypes, and ensuring the design aligned with the goal
@@ -218,7 +222,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         LANGUAGE DRIVEN ARTISTS DISCOVERY
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         The landing page features an array of Asian languages alongside their respective countries,
                         fostering exploration and discoverability. Designed with the aim of initiating connections,
                         it invites users to gravitate towards a language or country they resonate with, facilitating
@@ -228,7 +232,7 @@ export default function Home() {
 
                 {/*/!* Video *!/*/}
                 <div
-                    className="lg:col-start-6 lg:col-span-6 lg:mt-36 col-start-1 col-span-4 mt-20 lg:mt-0 row-start-3 lg:row-start-2">
+                    className="lg:col-start-6 lg:col-span-6 col-start-1 col-span-4 mt-20 row-start-3 lg:row-start-2">
                     <video
                         className="w-full rounded-lg"
                         controls={false}
@@ -265,7 +269,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         BEHIND THE BEAT COLLABORATIONS
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         Clicking into a country reveals all the artists from that region, introducing fans to
                         artists who may share a similar cultural background. On the right side of the screen,
                         highlighted collaborations offer exposure for lesser-known 88rising artists, providing fans
@@ -277,7 +281,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         ADAPTABLE INDIVIDUALITY
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         Individual artist pages offer fans a unique, immersive discovery experience. A biography
                         section uses an intimate photo stack motif to present personal and relatable content on a
                         single screen, encouraging deeper exploration. Fans can also browse song and merchandise
@@ -287,7 +291,7 @@ export default function Home() {
 
                 {/* Video */}
                 <div
-                    className="lg:col-start-6 lg:col-span-6 lg:mt-36 col-start-1 col-span-4 mt-20 lg:mt-0 row-start-7 lg:row-start-4">
+                    className="lg:col-start-6 lg:col-span-6 lg:mt-36 col-start-1 col-span-4 mt-20 row-start-7 lg:row-start-4">
 
                     <video
                         className="w-full rounded-lg"
@@ -325,7 +329,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         BEHIND THE BEAT COLLABORATIONS
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         User research revealed that many fans weren’t aware of 88rising’s newer releases. To address
                         this, we introduced an &#39;Upcoming Releases&#39; page, organized as a waveform-inspired
                         linear
@@ -337,39 +341,39 @@ export default function Home() {
             <hr className="border-t border-black w-full mt-28"/>
             <section className="grid grid-cols-4 lg:grid-cols-12 gap-x-5 py-8 mt-10 lg:mt-28 mx-5">
                 <section
-                    className="lg:col-start-7 lg:col-span-5 grid grid-cols-4 col-span-4 lg:grid-cols-5 gap-x-5 lg:row-start-1 mt-5">
+                    className="lg:col-start-7 lg:col-span-5 grid grid-cols-4 col-span-4 lg:grid-cols-5 gap-x-5 lg:row-start-1">
                     <div
-                        className="col-span-1 lg:col-start-1 lg:col-span-1 mt-10 lg:justify-self-end lg:mt-5 row-start-1 mt-5 ">
-                        <p className="lg:text-xl font-neuehaasunica">62%</p>
+                        className="col-span-1 lg:col-start-1 lg:col-span-1 mt-10 lg:justify-self-end lg:mt-5 row-start-1 ">
+                        <p className=" font-neuehaasunica">62%</p>
                     </div>
-                    <div className="col-span-3 lg:col-start-2 lg:col-span-4 mt-10 lg:mt-5 row-start-1 mt-5 -ml-16 lg:ml-0">
-                        <p className="lg:text-xl font-neuehaasunica">
+                    <div className="col-span-3 lg:col-start-2 lg:col-span-4 mt-10 lg:mt-5 row-start-1 -ml-16 lg:ml-0">
+                        <p className=" font-neuehaasunica">
                             Of respondents were not aware of 88rising’s new weekly releases
                         </p>
                     </div>
                     <div
                         className="col-span-1 lg:col-start-1 lg:col-span-1 lg:justify-self-end row-start-2 mt-5">
-                        <p className="lg:text-xl font-neuehaasunica">93%</p>
+                        <p className=" font-neuehaasunica">93%</p>
                     </div>
                     <div className="col-span-3 lg:col-start-2 lg:col-span-4 row-start-2 mt-5 -ml-16 lg:ml-0">
-                        <p className="lg:text-xl font-neuehaasunica">
+                        <p className=" font-neuehaasunica">
                             Of user interviews were not aware of the majority of artists signed to 88rising
                         </p>
                     </div>
                     <div
                         className="col-span-1 lg:col-start-1 lg:col-span-1 lg:justify-self-end row-start-3 mt-5">
-                        <p className="lg:text-xl font-neuehaasunica">75%</p>
+                        <p className=" font-neuehaasunica">75%</p>
                     </div>
                     <div className="col-span-3 lg:col-start-2 lg:col-span-4 row-start-3 mt-5 -ml-16 lg:ml-0">
-                        <p className="lg:text-xl font-neuehaasunica">
+                        <p className=" font-neuehaasunica">
                             Of respondents believe that 88rising is declining in popularity </p>
                     </div>
                     <div
                         className="col-span-1 lg:col-start-1 lg:col-span-1 lg:justify-self-end row-start-4 mt-5">
-                        <p className="lg:text-xl font-neuehaasunica">41%</p>
+                        <p className=" font-neuehaasunica">41%</p>
                     </div>
                     <div className="col-span-3 lg:col-start-2 lg:col-span-4 row-start-4 mt-5 -ml-16 lg:ml-0">
-                        <p className="lg:text-xl font-neuehaasunica">
+                        <p className=" font-neuehaasunica">
                             Of respondents attributed to 88risings decline in popularity to a lack of brand
                             engagement
                         </p>
@@ -380,7 +384,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10">
                         USER RESEARCH
                     </h1>
-                    <p className="lg:text-xl font-neuehaasunica mt-5">
+                    <p className=" font-neuehaasunica mt-5">
                         To understand 88rising&#39;s audience, we conducted 15 interviews and surveyed 89 respondents
                         from social media and fan communities. Our research focused on exploring their music-sharing
                         habits, brand perception, and engagement with the artist roster.
@@ -400,7 +404,7 @@ export default function Home() {
                             <h4 className="font-favoritmono text-h4mono mt-10">
                                 DEFINING CASUAL FANS
                             </h4>
-                            <p className="lg:text-xl mt-5 font-neuehaasunica">
+                            <p className=" mt-5 font-neuehaasunica">
                                 Those who gravitate towards 88rising’s renowned artists but show limited awareness
                                 of other talents on the roster. While they are interested in knowing more about
                                 these lesser-known artists, casual fans most of the time, will only engage with
@@ -411,7 +415,7 @@ export default function Home() {
                             <h4 className="font-favoritmono text-h4mono mt-10">
                                 RATIONALE
                             </h4>
-                            <p className="lg:text-xl mt-5 font-neuehaasunica">
+                            <p className=" mt-5 font-neuehaasunica">
                                 We chose to target casual fans, as they have shown declining engagement. Focusing on
                                 this segment offers 88rising opportunities to strengthen brand loyalty and drive
                                 growth by showcasing their diverse talent roster.
@@ -428,7 +432,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4">
-                    <p className="lg:text-xl mt-5 lg:mt-0 font-neuehaasunica">
+                    <p className=" mt-5 lg:mt-0 font-neuehaasunica">
                         We delved deeper into the pain points of casual fans and discovered that the current
                         touchpoints section highlights how artist content is scattered across multiple platforms,
                         making it difficult for fans to engage with and connect to their favorite creators.
@@ -438,7 +442,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         YOUTUBE
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         YouTube is currently 88rising’s primary platform for showcasing original content, including
                         music videos, behind-the-scenes clips, interviews, and variety-style segments. However, this
                         content is buried across multiple channels, making it difficult for fans to discover and
@@ -485,7 +489,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         88RISING WEBSITE
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         Additionally, 88rising’s current website only focuses on merchandise sales, lacking any
                         clarity on their current roster of artists, what the brand is about, and any information
                         about the personalities surrounding the brand.
@@ -500,7 +504,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4 ">
-                    <p className="lg:text-xl mt-5 lg:mt-0 font-neuehaasunica">
+                    <p className=" mt-5 lg:mt-0 font-neuehaasunica">
                         Our team quickly developed mid-fidelity wireframes to align with our content strategy. While
                         this iteration did not fully meet expectations, mentors found the core concept highly
                         compelling, highlighting its potential and relevance.
@@ -544,7 +548,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4 ">
-                    <p className="lg:text-xl mt-5 lg:mt-0 font-neuehaasunica">
+                    <p className=" mt-5 lg:mt-0 font-neuehaasunica">
                         After feedback, we refined our approach to better balance 88rising&#39;s goals with
                         actionable
                         outcomes. While this improved the overall concept, the artists&#39; page was noted for
@@ -602,7 +606,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4 ">
-                    <p className="lg:text-xl mt-5 lg:mt-0 font-neuehaasunica">
+                    <p className=" mt-5 lg:mt-0 font-neuehaasunica">
                         As many fans consume music-related content primarily through mobile devices, our next step
                         is to adapt the desktop design into a mobile-friendly experience. This involves rethinking
                         how interactions and content layouts translate to smaller screen sizes, particularly as the
@@ -665,7 +669,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4 ">
-                    <p className="lg:text-xl mt-5 lg:mt-0 font-neuehaasunica">
+                    <p className="mt-5 lg:mt-0 font-neuehaasunica">
                         We had 7 weeks to find a client and build a solution, but we spent most of it searching for
                         the &#34;perfect business problem,&#34; leaving just 3 weeks to deliver. This experience
                         reminded me
@@ -674,7 +678,7 @@ export default function Home() {
                         interactions, and thoughtful copywriting to create an emotional connection between fans and
                         artists.
                     </p>
-                    <p className="lg:text-xl mt-5 font-neuehaasunica">
+                    <p className=" mt-5 font-neuehaasunica">
                         This project reinforced the value of adaptability and showed me that impactful design is
                         about more than aesthetics—it’s about crafting meaningful user experiences that resonate.
                     </p>

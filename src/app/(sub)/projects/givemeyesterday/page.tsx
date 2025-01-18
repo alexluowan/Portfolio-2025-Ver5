@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/src/app/components/Navbar";
+import ResponsiveImage from "@/src/app/components/ResponsiveImage";
 
 export default function Home() {
     return (
         <main>
+            <ResponsiveImage
+                desktopSrc="/img/givemeyesterday/givemeyesterdaythumbnail.png"
+                mobileSrc="/img/givemeyesterday/givemeyesterdaythumbnailmobile.png"
+                alt="An Image Showcasing a Laptop with a Website"
+            />
             <div className="grid grid-cols-12 gap-x-5 py-8 mx-5">
                 <Navbar
                 />
@@ -14,13 +20,13 @@ export default function Home() {
                         A pre-exhibition microsite that provides a curated preview of artworks by 14 international
                         artists, featured in Fondazione Prada’s &#39;Give Me Yesterday&#39; exhibition.
                     </h1>
-                    <p className="font-neuehaasunica  lg:text-xl mt-8">
+                    <p className="font-neuehaasunica mt-8">
                         Over the course of five weeks, our exploration of art direction and graphic experimentation with
                         posters transitioned into content-driven interaction design. By analyzing key precedents aligned
                         with our design principles & qualities, we developed a final microsite that combined intentional
                         content design with informed art direction.
                     </p>
-                    <p className="font-neuehaasunica  lg:text-xl mt-5">
+                    <p className="font-neuehaasunica  mt-5">
                         This project is not associated with exhibition. It was chosen as a mock client for an academic
                         assignment.
                     </p>
@@ -28,7 +34,7 @@ export default function Home() {
                         <div className="flex flex-col w-full md:w-3/5">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">YEAR & DURATION</h4>
-                                <p className="font-neuehaasunica  md:text-xl lg:text-xl">
+                                <p className="font-neuehaasunica ">
                                     2022 - 5 Weeks
                                 </p>
                             </div>
@@ -36,7 +42,7 @@ export default function Home() {
                         <div className="flex flex-col w-4/5 ">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">MY ROLE</h4>
-                                <p className="font-neuehaasunica  md:text-xl lg:text-xl"> Lead Visual Designer,
+                                <p className="font-neuehaasunica "> Lead Visual Designer,
                                     Interaction Designer, Prototyping
                                 </p>
                             </div>
@@ -44,14 +50,14 @@ export default function Home() {
                         <div className="flex flex-col w-4/5">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">TEAM MEMBERS</h4>
-                                <p className="font-neuehaasunica  md:text-xl lg:text-xl">
+                                <p className="font-neuehaasunica ">
                                     Claret Egwim-Nwagbara, Jasper Precilla, Sam Newaz, Karishma Sen </p>
                             </div>
                         </div>
                         <div className="flex flex-col w-3/5">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">TOOLS</h4>
-                                <p className="font-neuehaasunica  md:text-xl lg:text-xl">
+                                <p className="font-neuehaasunica">
                                     Figma, After Effects, Protopie, Processing
                                 </p>
                             </div>
@@ -82,7 +88,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4">
-                    <p className="lg:text-xl mt-5 lg:mt-0 font-neuehaasunica">
+                    <p className="mt-5 lg:mt-0 font-neuehaasunica">
                         Our direction for Fondazione Prada is inspired by the curated aesthetic of photographic art,
                         drawing parallels to the evocative and unconventional works of Torbjørn Rødland. This approach,
                         combined with the introspective themes of the Give Me Yesterday exhibition, creates a visual
@@ -139,7 +145,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         IMMERSIVE PREVIEW
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         Greeting the visitor with floating images from the exhibition, each artist section and the
                         associated content are previewed through a colour representation. The transition from artist to
                         artist can be seamlessly achieved using a vertical scroll or by clicking through the navigation.
@@ -169,7 +175,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         INTERACTIVE SPOTLIGHT
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         Each artist has a preview displayed at a large scale. The circle cursor appears as the user is
                         moving across the artist landing page screen, when clicked upon it transitions the visitor to
                         the artist gallery.
@@ -198,7 +204,7 @@ export default function Home() {
                         PARALLAX IMAGE GALLERY
 
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         The visitor is able to view all of the artist’s images in a long horizontal parallax scroll. By
                         layering the images on top of each other and moving them at different speeds as the user
                         scrolls, we apply the concept of figure and ground to create depth. When you reach the end of
@@ -228,7 +234,7 @@ export default function Home() {
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
                         HOVER TO VIEW AN IMAGE IN FULL
                     </h1>
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:w-3/4">
+                    <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         By hovering over an image, the visitor is able to expand its size to view the image as a whole.
                         To better implement the concept of large scale shifts and figure and ground, the background will
                         shrink while the content is pushed to the side as the image expands.
@@ -261,7 +267,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4">
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:mt-0">
+                    <p className="font-neuehaasunica mt-5 lg:mt-0">
                         During our process, we realized we were experimenting with interaction design separately
                         from
                         visual design, which hindered unity and made it difficult to justify design decisions.
@@ -326,7 +332,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4">
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:mt-0">
+                    <p className="font-neuehaasunica mt-5 lg:mt-0">
                         We decided to move forward with the second direction and implemented elements from the third
                         direction like the interesting page transitions and interactive circular cursor. I guided the
                         final interaction designs to achieve this sense of harmony.
@@ -365,7 +371,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4">
-                    <p className="font-neuehaasunica lg:text-xl mt-5 lg:mt-0">
+                    <p className="font-neuehaasunica mt-5 lg:mt-0">
                         I chose Neue Haas Grotesk due to its clean, modern sans-serif typeface with neutral letterforms
                         that offer a timeless and versatile appearance. Its balanced proportions and minimal contrast
                         create a harmonious visual flow, making it suitable for both body text and headlines.
@@ -393,7 +399,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4">
-                    <p className="text-xl font-neuehaasunica mt-5 lg:mt-0">
+                    <p className="font-neuehaasunica mt-5 lg:mt-0">
                         Using a near tertiary colour palette of yellow with energetic cool tones, we created colour
                         coordinated subsections for different sections of the exhibitions. This creates a sense of unity
                         when scrolling through related works and a clear shift from one section to another. The yellow
@@ -439,7 +445,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="col-start-1 lg:col-start-7 col-span-4 ">
-                    <p className="lg:text-xl mt-5 lg:mt-0 font-neuehaasunica">
+                    <p className="mt-5 lg:mt-0 font-neuehaasunica">
                         If I could go back, I would have definitely explored more ways to enhance the artists&#39; page,
                         not
                         just through additional interactions, but by incorporating thoughtful content that could elevate
@@ -447,7 +453,7 @@ export default function Home() {
                         ability to experiment as much as we would have liked.
 
                     </p>
-                    <p className="lg:text-xl mt-5 font-neuehaasunica">
+                    <p className="mt-5 font-neuehaasunica">
                         Crafting this visual identity was a journey of exploration that not only honed my skills in
                         visual and digital design but also expanded my overall perspective on design. It made me
                         recognize that design isn&#39;t confined to the present; it draws inspiration from the past and
