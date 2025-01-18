@@ -237,6 +237,7 @@ export default function Home() {
                         className="w-full rounded-lg"
                         controls={false}
                         autoPlay={true}
+                        playsInline={true}
                         muted
                         loop
                     >
@@ -253,6 +254,7 @@ export default function Home() {
                         className="w-full rounded-lg"
                         controls={false}
                         autoPlay={true}
+                        playsInline={true}
                         muted
                         loop
                     >
@@ -297,6 +299,7 @@ export default function Home() {
                         className="w-full rounded-lg"
                         controls={false}
                         autoPlay={true}
+                        playsInline={true}
                         muted
                         loop
                     >
@@ -313,6 +316,7 @@ export default function Home() {
                         className="w-full rounded-lg"
                         controls={false}
                         autoPlay={true}
+                        playsInline={true}
                         muted
                         loop
                     >
@@ -457,6 +461,7 @@ export default function Home() {
                         className="w-full rounded-lg"
                         controls={false}
                         autoPlay={true}
+                        playsInline={true}
                         muted
                         loop
                     >
@@ -473,6 +478,7 @@ export default function Home() {
                         className="w-full rounded-lg"
                         controls={false}
                         autoPlay={true}
+                        playsInline={true}
                         muted
                         loop
                     >
@@ -623,6 +629,7 @@ export default function Home() {
                                 className="w-full rounded-lg"
                                 controls={false}
                                 autoPlay={true}
+                                playsInline={true}
                                 muted
                                 loop
                             >
@@ -635,6 +642,7 @@ export default function Home() {
                                 className="w-full rounded-lg"
                                 controls={false}
                                 autoPlay={true}
+                                playsInline={true}
                                 muted
                                 loop
                             >
@@ -647,6 +655,7 @@ export default function Home() {
                                 className="w-full rounded-lg"
                                 controls={false}
                                 autoPlay={true}
+                                playsInline={true}
                                 muted
                                 loop
                             >
