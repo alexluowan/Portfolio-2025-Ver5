@@ -269,7 +269,7 @@ export default function Home() {
                 <div
                     className="col-start-1 lg:col-start-8 col-span-4 lg:col-span-5 flex flex-col justify-end lg:ml-28 mt-8 lg:mt-0">
                     <h1 className="font-offbit text-3xl lg:text-h1 leading-10 lg:w-2/4">
-                        BEHIND THE BEAT COLLABORATIONS
+                        UPCOMING RELEASES
                     </h1>
                     <p className="font-neuehaasunica mt-5 lg:w-3/4">
                         Clicking into a country reveals all the artists from that region, introducing fans to
