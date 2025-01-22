@@ -45,8 +45,12 @@ export default function Home() {
                             <Link target="_blank" href="/projects/about">
                                 <p className="font-neuehaasunica underline">About</p>
                             </Link>
+                            <Link href="https://drive.google.com/file/d/1FNF-Snw4YTDx5O6uOc9lLK5lufWIOhF_/view?usp=sharing">
                             <p className="font-neuehaasunica underline">Resume</p>
-                            <p className="font-neuehaasunica underline">Read.cv</p>
+                            </Link>
+                                <Link href="https://read.cv/aluowan">
+                                <p className="font-neuehaasunica underline">Read.cv</p>
+                            </Link>
                         </div>
                     </div>
                 </div>
