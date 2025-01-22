@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "@/src/app/components/Navbar";
 import ResponsiveImage from "@/src/app/components/ResponsiveImage";
+import CloseButton from "@/src/app/components/CloseButton";
 export default function Home() {
     return (
         <main>
@@ -9,10 +10,8 @@ export default function Home() {
                 mobileSrc="/img/88rising/88risingthumbnailmobile.png"
                 alt="An Image Showcasing a Laptop with a Website"
             />
-            <div className="grid grid-cols-4 lg:grid-cols-12 gap-x-5 py-8 mx-5">
-                <Navbar
-                />
-            </div>
+            <CloseButton>
+            </CloseButton>
             <section className="grid grid-cols-4 lg:grid-cols-12 gap-x-5 py-8 mx-5">
                 <div className="col-start-1 col-span-full lg:col-start-3 lg:col-span-8">
                     <h1 className="font-offbit text-3xl lg:text-h1 uppercase lg:leading-10">

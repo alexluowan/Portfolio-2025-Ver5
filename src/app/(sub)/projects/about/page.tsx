@@ -1,13 +1,12 @@
 import Navbar from "@/src/app/components/Navbar";
+import CloseButton from "@/src/app/components/CloseButton";
 
 export default function About() {
     return (
         <main>
 
-            <div className="grid grid-cols-12 gap-x-5 py-8 mx-5">
-                <Navbar
-                />
-            </div>
+            <CloseButton>
+            </CloseButton>
             <section className="grid grid-cols-12 gap-x-5 py-8 mx-5">
                 <div className="col-start-3 col-span-8">
                     <h1 className="font-offbit text-h1 uppercase leading-10">

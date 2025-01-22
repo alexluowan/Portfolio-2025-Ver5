@@ -23,7 +23,7 @@ export default function Navbar() {
                     }}
                 ></div>
 
-                {["WORK", "ABOUT", "RESUME"].map((item, index) => (
+                {["EXIT", "ABOUT", "RESUME"].map((item, index) => (
                     <li
                         key={item}
                         className="relative z-10 flex-grow text-center"
