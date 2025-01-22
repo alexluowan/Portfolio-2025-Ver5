@@ -1,40 +1,27 @@
-// app/TransitionWrapper.tsx
 "use client";
 
-import { ReactNode } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React, { ReactNode } from "react";
 import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 
-// We'll create a single variants object for demonstration.
-// In practice, you could define a separate object for exit vs. enter
-// if you need different animations on each route.
-const variants = {
+const transitionVariants = {
     initial: {
-        // New page starts just below screen
-        y: "100%",
-        scale: 1,
-        rotateX: 0,
         opacity: 0,
+        y: 40,  // e.g. slight push from below
     },
     animate: {
-        // Come to center, fully visible
-        y: "0%",
-        scale: 1,
-        rotateX: 0,
         opacity: 1,
+        y: 0,
         transition: {
-            duration: 0.8,
+            duration: 0.5,
             ease: "easeInOut",
         },
     },
     exit: {
-        // Old page moves upward, smaller, slightly tilted
-        y: "-50%",
-        scale: 0.9,
-        rotateX: 10,
-        opacity: 0.7,
+        opacity: 0,
+        y: -40, // fades out upwards
         transition: {
-            duration: 0.8,
+            duration: 0.3,
             ease: "easeInOut",
         },
     },
@@ -44,21 +31,14 @@ export default function TransitionWrapper({ children }: { children: ReactNode })
     const pathname = usePathname();
 
     return (
-        <AnimatePresence mode="sync">
-            {/**
-             * AnimatePresence will keep the old page in the DOM
-             * until its exit animation is finished,
-             * while also rendering the new page's animation.
-             */}
+        <AnimatePresence mode="wait">
+            {/*
+        The key prop triggers exit/enter animations
+        each time pathname changes (e.g., from / to /projects/88rising).
+      */}
             <motion.div
                 key={pathname}
-                style={{
-                    // The perspective helps the rotateX look more realistic
-                    perspective: "1200px",
-                    position: "relative",
-                    overflow: "hidden",
-                }}
-                variants={variants}
+                variants={transitionVariants}
                 initial="initial"
                 animate="animate"
                 exit="exit"
