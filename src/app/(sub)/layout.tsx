@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import "../globals.css";
 import localFont from 'next/font/local'
+import TransitionLayout from "@/src/app/components/TransitionLayout";
+import CloseButton from "@/src/app/components/CloseButton";
 
 const neuehaasunica = localFont({
     src: [
@@ -34,7 +36,7 @@ const offbit = localFont({
             style: 'normal'
 
         },
-        ],
+    ],
     variable: '--font-offbit',
 })
 
@@ -49,7 +51,6 @@ const favoritmono = localFont({
     ],
     variable: '--font-favoritmono',
 })
-
 
 
 export const metadata: Metadata = {
@@ -67,7 +68,13 @@ export default function RootLayout({
         <body
             className={`${favoritmono.variable} ${neuehaasunica.variable} ${offbit.variable} antialiased`}
         >
-        {children}
+        <CloseButton>
+        </CloseButton>
+        <TransitionLayout>
+
+            {children}
+        </TransitionLayout>
+
         </body>
         </html>
     );
