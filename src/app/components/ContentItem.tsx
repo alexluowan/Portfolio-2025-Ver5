@@ -20,7 +20,7 @@ const ContentItem: React.FC<ContentItemProps> = ({
                                                      borderColor = "border-black",
                                                  }) => {
     return (
-        <div className={`aspect-square relative rounded-lg border ${borderColor} ${backgroundColor}`}>
+        <div className={`aspect-video relative rounded-lg border ${borderColor} ${backgroundColor}`}>
             {videoSrc ? (
                 <video
                     src={videoSrc}
