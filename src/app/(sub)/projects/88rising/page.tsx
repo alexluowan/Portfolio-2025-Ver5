@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Navbar from "@/src/app/components/Navbar";
 import ResponsiveImage from "@/src/app/components/ResponsiveImage";
 import CloseButton from "@/src/app/components/CloseButton";
 export default function Home() {

@@ -1,4 +1,3 @@
-import Navbar from "@/src/app/components/Navbar";
 import CloseButton from "@/src/app/components/CloseButton";
 
 export default function About() {
