@@ -36,7 +36,9 @@ export default function Home() {
                         <h4 className="font-favoritmono text-h4mono">WORKED WITH</h4>
                         <div className="flex flex-col w-full mt-2">
                             <p className="font-neuehaasunica">Blaze.ai</p>
-                            <p className="font-neuehaasunica">[More to come]</p>
+                            <p className="font-neuehaasunica">Phlur</p>
+                            <p className="font-neuehaasunica">Cyklar</p>
+                            <p className="font-neuehaasunica">Lilypad Paint</p>
                         </div>
                     </div>
                     <div>
