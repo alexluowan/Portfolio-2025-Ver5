@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 interface ContentItemProps {
     videoSrc?: string;
-    imageSrc?: string; // New prop for image source
+    imageSrc?: string;
     title?: string;
     subtitleLeft?: string;
     subtitleRight?: string;
@@ -12,7 +13,7 @@ interface ContentItemProps {
 
 const ContentItem: React.FC<ContentItemProps> = ({
                                                      videoSrc,
-                                                     imageSrc, // Added imageSrc
+                                                     imageSrc,
                                                      title,
                                                      subtitleLeft,
                                                      subtitleRight,
@@ -27,15 +28,20 @@ const ContentItem: React.FC<ContentItemProps> = ({
                     autoPlay
                     muted
                     loop
+                    // Consider using preload="none" or lazy loading via an Intersection Observer if the video is not above the fold.
                     className="absolute top-0 left-0 w-full h-full object-cover rounded-lg filter brightness-50"
                 />
             ) : imageSrc ? (
-                <img
+                <Image
                     src={imageSrc}
                     alt={title || "Content image"}
-                    className="absolute top-0 left-0 w-full h-full object-cover rounded-lg filter brightness-50"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg filter brightness-50"
+                    // Next.js' Image component lazy loads images by default.
                 />
             ) : null}
+
             {title && (
                 <h1 className="absolute bottom-4 left-4 text-background text-4xl font-offbit z-10">
                     {title}
@@ -55,4 +61,4 @@ const ContentItem: React.FC<ContentItemProps> = ({
     );
 };
 
-export default ContentItem;
+export default React.memo(ContentItem);
