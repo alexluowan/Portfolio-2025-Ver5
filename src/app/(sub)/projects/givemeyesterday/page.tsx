@@ -467,7 +467,7 @@ export default function Home() {
                     </p>
                 </div>
             </section>
-            <footer className="col-start-1 lg:col-span-6 lg:mt-36"></footer>
+            <footer className="col-start-1 lg:col-span-6 mt-36"></footer>
 
         </main>
 
