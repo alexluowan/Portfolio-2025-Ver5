@@ -41,7 +41,7 @@ export default function Home() {
                         <div className="flex flex-col w-4/5 ">
                             <div>
                                 <h4 className="font-favoritmono text-h4mono">MY ROLE</h4>
-                                <p className="font-neuehaasunica "> Product Designer
+                                <p className="font-neuehaasunica "> UI Designer
                                 </p>
                             </div>
                         </div>

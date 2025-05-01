@@ -104,7 +104,7 @@ export default function Home() {
                             <ContentItem
                                 imageSrc="/img/wise/wisethumbnail.png"
                                 title="WISE"
-                                subtitleLeft="PRODUCT DESIGN + PERSONAL PROJECT"
+                                subtitleLeft="UI DESIGN + PERSONAL PROJECT"
                                 subtitleRight="2025"
                                 borderColor="border-black"
                             />
