@@ -99,7 +99,17 @@ export default function Home() {
                             />
                         </Link>
                     </div>
-
+                    <div className="col-span-4 lg:col-span-full mt-5">
+                        <Link target="_blank" href="/projects/wise">
+                            <ContentItem
+                                imageSrc="/img/wise/wisethumbnail.png"
+                                title="WISE"
+                                subtitleLeft="PRODUCT DESIGN + PERSONAL PROJECT"
+                                subtitleRight="2025"
+                                borderColor="border-black"
+                            />
+                        </Link>
+                    </div>
                     {/* BLAZEAI */}
                     <div className="col-span-4 lg:col-span-full mt-5">
                         <Link target="_blank" href="https://www.blaze.ai/">

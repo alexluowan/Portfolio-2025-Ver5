@@ -353,7 +353,8 @@ export default function Home() {
                         height={671} // Set the original height of the SVG
                     />
                 </div>
-                <div className="lg:col-start-3 lg:col-span-8 col-start-1 col-span-4 mt-32 row-start-3 lg:row-start-3 lg:absolute">
+                <div
+                    className="lg:col-start-3 lg:col-span-8 col-start-1 col-span-4 mt-32 row-start-3 lg:row-start-3 lg:absolute">
                     <Image
                         src="/img/givemeyesterday/transitioniterationmobile.svg"
                         alt="First Ideation"
@@ -413,12 +414,12 @@ export default function Home() {
 
                 <div className="lg:col-start-3 lg:col-span-8 col-start-1 col-span-4 mt-16 lg:mt-32"><Image
                     src="/img/givemeyesterday/colourcategorization.svg"
-                        alt="First Ideation"
-                        layout="responsive"
-                        className="rounded-lg"
-                        width={1117} // Set the original width of the SVG
-                        height={1225} // Set the original height of the SVG
-                    />
+                    alt="First Ideation"
+                    layout="responsive"
+                    className="rounded-lg"
+                    width={1117} // Set the original width of the SVG
+                    height={1225} // Set the original height of the SVG
+                />
                 </div>
             </section>
             <hr className="border-t border-black w-full mt-28"/>
@@ -466,6 +467,7 @@ export default function Home() {
                     </p>
                 </div>
             </section>
+            <footer className="col-start-1 lg:col-span-6 lg:mt-36"></footer>
 
         </main>
 
