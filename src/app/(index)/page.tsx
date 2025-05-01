@@ -86,7 +86,17 @@ export default function Home() {
                             />
                         </Link>
                     </div>
-
+                    <div className="col-span-4 lg:col-span-full mt-5">
+                        <Link target="_blank" href="/projects/wise">
+                            <ContentItem
+                                imageSrc="/img/wise/wisethumbnail.png"
+                                title="WISE"
+                                subtitleLeft="UI DESIGN + PERSONAL PROJECT"
+                                subtitleRight="2025"
+                                borderColor="border-black"
+                            />
+                        </Link>
+                    </div>
                     {/* GIVE ME YESTERDAY */}
                     <div className="col-span-4 lg:col-span-full mt-5">
                         <Link href="/projects/givemeyesterday">
@@ -95,17 +105,6 @@ export default function Home() {
                                 title="GIVE ME YESTERDAY"
                                 subtitleLeft="INTERACTION DESIGN + BRAND"
                                 subtitleRight="2022"
-                                borderColor="border-black"
-                            />
-                        </Link>
-                    </div>
-                    <div className="col-span-4 lg:col-span-full mt-5">
-                        <Link target="_blank" href="/projects/wise">
-                            <ContentItem
-                                imageSrc="/img/wise/wisethumbnail.png"
-                                title="WISE"
-                                subtitleLeft="UI DESIGN + PERSONAL PROJECT"
-                                subtitleRight="2025"
                                 borderColor="border-black"
                             />
                         </Link>
