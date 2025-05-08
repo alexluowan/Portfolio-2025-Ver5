@@ -87,6 +87,17 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className="col-span-4 lg:col-span-full mt-5">
+                        <Link target="_blank" href="/projects/figma">
+                            <ContentItem
+                                imageSrc="/img/figma/figmaplugindockthumbnail.png"
+                                title="FIGMA PLUGIN DOCK"
+                                subtitleLeft="UX/UI + PERSONAL PROJECT"
+                                subtitleRight="2025"
+                                borderColor="border-black"
+                            />
+                        </Link>
+                    </div>
+                    <div className="col-span-4 lg:col-span-full mt-5">
                         <Link target="_blank" href="/projects/wise">
                             <ContentItem
                                 imageSrc="/img/wise/wisethumbnail.png"
